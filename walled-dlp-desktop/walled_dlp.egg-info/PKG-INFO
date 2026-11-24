@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: walled-dlp
+Version: 1.0.0
+Summary: Desktop DLP guard for ChatGPT and Perplexity web apps
+Requires-Python: >=3.10
+Requires-Dist: websockets>=12
+Requires-Dist: pypdf>=4
+Requires-Dist: Pillow>=10.1
+Requires-Dist: numpy
+Provides-Extra: ocr
+Requires-Dist: rapidocr-onnxruntime; extra == "ocr"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: aiohttp; extra == "dev"

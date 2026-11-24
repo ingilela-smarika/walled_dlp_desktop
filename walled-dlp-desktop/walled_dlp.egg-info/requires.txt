@@ -1,0 +1,11 @@
+websockets>=12
+pypdf>=4
+Pillow>=10.1
+numpy
+
+[dev]
+pytest
+aiohttp
+
+[ocr]
+rapidocr-onnxruntime

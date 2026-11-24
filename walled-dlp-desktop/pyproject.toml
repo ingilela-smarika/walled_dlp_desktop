@@ -1,0 +1,23 @@
+[project]
+name = "walled-dlp"
+version = "1.0.0"
+description = "Desktop DLP guard for ChatGPT and Perplexity web apps"
+requires-python = ">=3.10"
+dependencies = ["websockets>=12", "pypdf>=4", "Pillow>=10.1", "numpy"]
+
+[project.optional-dependencies]
+ocr = ["rapidocr-onnxruntime"]
+dev = ["pytest", "aiohttp"]
+
+[project.scripts]
+walled-dlp = "walled_dlp.app:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["walled_dlp"]
+
+[tool.setuptools.package-data]
+walled_dlp = ["inject.js"]

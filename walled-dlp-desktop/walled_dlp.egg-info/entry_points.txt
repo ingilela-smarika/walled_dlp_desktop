@@ -1,0 +1,2 @@
+[console_scripts]
+walled-dlp = walled_dlp.app:main
